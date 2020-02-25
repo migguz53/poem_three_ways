@@ -1,6 +1,113 @@
 body{
-    background-color: white;
     margin: 0;
     padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
+.grids{
+    display: grid;
+    margin: auto;
+    grid-template-rows: .3fr 1fr;
+    grid-gap: 27vh;
+}
+
+.title{
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+}
+
+h1{
+    font-size: 16px;
+}
+
+h2{
+    font-size: 12px;
+}
+
+.poem{
+    font-size: 8px;
+}
+
+.leftside{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.rightside{
+    text-align: right;
+}
+
+@media screen and (max-width: 1024px) and (min-width:768px){
+    h1 {
+        font-size: 5em;
+        line-height: 1.2em;
+    }
+    .poem{
+        max-width: 72vw;
+        font-size: 1.2em;
+    }
+    h2 {
+        max-width: 72vw;
+        font-size: 1.7em;
+    }
+    .rightside{
+        margin-bottom: 90px;
+    }
+    .leftside{
+        margin-bottom: 90px;
+    }
+    .grids{
+        padding: 10vw;
+    }
+}
+
+@media screen and (max-width: 767px){
+    h1 {
+        font-size: 5em;
+        line-height: 1.2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .poem{
+        font-size: 1em;
+    }
+    .rightside{
+        margin-bottom: 80px;
+    }
+    .leftside{
+        margin-bottom: 80px;
+    }
+    .grids{
+        padding: 8vw;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .poem{
+        max-width: 53vw;
+        font-size: 1.4em;
+    }
+    .headers{
+        max-width: 53vw;
+    }
+    h1 {
+        font-size: 6em;
+        line-height: 1.2em;
+        max-width: 42vw;
+    }
+    h2 {
+        font-size: 2em;
+        margin-right: 100px;
+    }
+    .rightside{
+        margin-bottom: 100px;
+        margin-right: 100px;
+    }
+    .leftside{
+        margin-bottom: 100px;
+    }
+    .grids{
+        padding: 12vw;
+    }
+}
